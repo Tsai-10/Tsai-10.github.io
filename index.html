@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-  <html lang="zh-TW">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的作品集</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-light fixed-top" style="background-color: #a7c5c6;">
-      <div class="container">
-        <div class="nav-menu">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">作品集</a></li>
-            <li class="nav-item"><a class="nav-link" href="#final-projects">期末專題作品</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
-          </ul>
-        </div>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="navbar navbar-light fixed-top" style="background-color: #a7c5c6;">
+    <div class="container">
+      <div class="nav-menu">
+        <ul class="navbar-nav flex-row gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">作品集</a></li>
+          <li class="nav-item"><a class="nav-link" href="#final-projects">期末專題作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡方式</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-
-  <main class="container">
+  <main class="container" style="padding-top: 100px;">
+    <!-- 首頁 -->
     <section id="home">
       <div class="text-center fade-in">
         <div class="profile-area mb-4">
           <div class="profile-circle">
-            <img src="attached_assets/B11108005 蔡琤蕙 四企管三單.JPG" alt="個人照片">
+            <img src="attached_assets/B11108005 蔡琤蕙 四企管三單.JPG" alt="個人照片" class="img-fluid rounded-circle" style="width: 200px;">
           </div>
         </div>
         <h1 class="display-3 mb-4 fw-bold name-title">蔡琤蕙</h1>
         <p class="lead mb-3 fs-3">台灣科技大學 企業管理系</p>
-        <div class="keywords-container">
-        </div>
+        <div class="keywords-container"></div>
       </div>
     </section>
 
-    <section id="about" class="bg-light">
-      <h2>關於我</h2>
+    <!-- 關於我 -->
+    <section id="about" class="bg-light py-5">
+      <h2 class="text-center mb-4">關於我</h2>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
@@ -57,12 +57,13 @@
       </div>
     </section>
 
-    <section id="projects">
-      <h2>作品集</h2>
+    <!-- 作品集 -->
+    <section id="projects" class="py-5">
+      <h2 class="text-center mb-4">作品集</h2>
       <div class="container">
         <div class="row g-4">
-          <!-- 作品 1 -->
-          <div class="col-md-6 col-lg-4">
+          <!-- 6 個作品展示區塊 -->
+          <div class="col-md-6 col-lg-4" >
             <div class="card h-100">
               <div class="card-body">
                 <h3 class="card-title">作品 1</h3>
@@ -71,7 +72,6 @@
               </div>
             </div>
           </div>
-          <!-- 作品 2 -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
@@ -81,7 +81,6 @@
               </div>
             </div>
           </div>
-          <!-- 作品 3 -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
@@ -91,7 +90,6 @@
               </div>
             </div>
           </div>
-          <!-- 作品 4 -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
@@ -101,7 +99,6 @@
               </div>
             </div>
           </div>
-          <!-- 作品 5 -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
@@ -111,7 +108,6 @@
               </div>
             </div>
           </div>
-          <!-- 作品 6 -->
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <div class="card-body">
@@ -125,11 +121,12 @@
       </div>
     </section>
 
-    <section id="projects" class="bg-light py-5">
+    <!-- 期末專題作品 -->
+    <section id="final-projects" class="bg-light py-5">
       <div class="container text-center">
         <h2 class="mb-4">期末專題作品</h2>
         <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6">
+          <div class="col-md-8 col-lg-8">
             <div class="card h-100 shadow">
               <div class="card-body">
                 <h3 class="card-title">Taipei City Walk</h3>
@@ -137,26 +134,24 @@
                 <p class="card-text">
                   整合台北市公共設施資訊的互動式地圖，能搜尋飲水機、廁所、垃圾桶及狗便袋箱，並提供使用者回饋與推薦功能。
                 </p>
-                <a href="https://tsai-10-hmlappio-e3uyd4wnbhhfgthkgrfab2.streamlit.app/" target="_blank" rel="noopener noreferrer" style="font-weight: 600; font-size: 1.1rem;">
-                  Taipei City Walk
-                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    <section id="contact">
-      <h2>聯絡方式</h2>
-      <div class="contact-info">
+
+    <!-- 聯絡方式 -->
+    <section id="contact" class="py-5">
+      <h2 class="text-center mb-4">聯絡方式</h2>
+      <div class="contact-info text-center">
         <p><i class="fas fa-phone"></i> 電話：0979000411</p>
         <p><i class="fas fa-envelope"></i> Email：b0979000411@gmail.com</p>
       </div>
     </section>
   </main>
 
-  <footer class="text-center mt-5">
+  <footer class="text-center mt-5 mb-3">
     <p>&copy; 2025 蔡琤蕙</p>
   </footer>
 

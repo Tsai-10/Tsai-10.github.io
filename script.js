@@ -20,7 +20,7 @@ document.querySelectorAll('section > div, .card').forEach(el => {
 
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     const section = document.querySelector(this.getAttribute('href'));
     section.scrollIntoView({ behavior: 'smooth' });
   });
